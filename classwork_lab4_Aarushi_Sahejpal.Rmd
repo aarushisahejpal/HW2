@@ -1,0 +1,19 @@
+---
+title: 'Classwork Lab #4'
+author: "Aarushi Sahejpal"
+date: "5/24/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(ggplot2)
+data(diamonds)
+```
+
+```{r}
+ggplot(diamonds, aes(x=carat, y=price)) + geom_point()
+```
